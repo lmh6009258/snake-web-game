@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body { background: #222; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        canvas { background: #111; display: block; margin: 0 auto; border: 2px solid #0f0; }
+        h1 { color: #0f0; text-align: center; }
+        .controls { text-align: center; margin-top: 10px; }
+        .controls button { margin: 0 5px; padding: 8px 16px; font-size: 16px; }
+        #gameOverMsg { color: #f33; font-size: 20px; text-align: center; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Snake Game</h1>
+        <canvas id="game" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="restartBtn">재시작</button>
+            <button id="speedDownBtn">속도 -</button>
+            <button id="speedUpBtn">속도 +</button>
+        </div>
+        <div id="gameOverMsg">Game Over!</div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
